@@ -25,7 +25,6 @@ const deleteTask = async(req,res)=>{
 }
 
 const getAllToDo = async(req,res)=>{
-  console.log("hekko");
   const resp = await task.find({status:"TO DO"})
   res.status(200).json({res:"Success",data:resp})
 }
